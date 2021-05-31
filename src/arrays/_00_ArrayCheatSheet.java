@@ -24,12 +24,28 @@ public class _00_ArrayCheatSheet {
 	Random ran = new Random();
 		for (int i = 0; i < num.length; i++) {
 			num[i]=ran.nextInt(1000);
+			System.out.println(num[i]);
 					
 		}
 		//8. without printing the entire array, print only the smallest number in the array
-		
+		int smallest = num[0];
+		for (int i = 0; i < num.length; i++) {
+			if (smallest>num[i]) {
+				smallest=num[i];
+			}
+		}
+		System.out.println(smallest);
 		//9 print the entire array to see if step 8 was correct
 		
 		//10. print the largest number in the array.
+		int largest = num[0];
+		for (int i = 0; i < num.length; i++) {
+			if (largest<num[i]) {
+				largest=num[i];
+				
+				
+			}
+		}
+		System.out.println(largest);
 	}
 }
